@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#05070c">
+  <title>BLOODWORLD // BULLET HELL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <header class="topbar">
+      <div class="brand">BLOODWORLD <span>// BULLET HELL</span></div>
+      <button id="soundToggle" class="small-btn" aria-label="サウンド切替">♪ SOUND: OFF</button>
+    </header>
+
+    <section id="titleScreen" class="screen active">
+      <div class="title-glow"></div>
+      <p class="eyebrow">OFFLINE SINGLE PLAYER // PROTOTYPE 0.1</p>
+      <h1>BLOODWORLD<br><span>BULLET HELL</span></h1>
+      <p class="subtitle">A little world beneath the black rain.</p>
+      <div class="title-panel">
+        <label for="difficultySelect">DIFFICULTY / 難易度</label>
+        <select id="difficultySelect">
+          <option value="easy">EASY</option>
+          <option value="normal" selected>NORMAL</option>
+          <option value="hard">HARD</option>
+          <option value="insane">INSANE</option>
+        </select>
+        <label for="playerSelect">PLAYER / 使用キャラクター</label>
+        <select id="playerSelect">
+          <option value="hanamori_suzune">花森 鈴音</option>
+        </select>
+        <button id="startBtn" class="primary-btn">START BATTLE</button>
+        <p class="tiny-note">通信不要・ブラウザ内で動作します</p>
+      </div>
+      <div class="title-footer">CHARACTER DATA: 02 // ENEMY DATA: 01</div>
+    </section>
+
+    <section id="battleScreen" class="screen">
+      <div class="battle-heading">
+        <div>
+          <div class="eyebrow">ENCOUNTER 001</div>
+          <h2 id="enemyName">フォト・キャンドレイ</h2>
+          <div class="rank-line">#ドミナント <span>// 誘いの道化師</span></div>
+        </div>
+        <div class="enemy-hp-wrap">
+          <div class="hp-label"><span>ENEMY HP</span><span id="enemyHpText">120 / 120</span></div>
+          <div class="hp-track"><div id="enemyHpBar" class="hp-fill enemy-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="arena-frame">
+        <div class="arena-grid"></div>
+        <div id="enemyPortrait" class="enemy-placeholder">
+          <div class="portrait-mark">?</div>
+          <div class="portrait-caption">PHOTO CANDRAY<br><span>IMAGE SLOT / COMING SOON</span></div>
+        </div>
+        <div id="dialogue" class="dialogue">「ウティと楽しく過ごすのよ！」</div>
+        <div id="dodgeArena" class="dodge-arena">
+          <div class="arena-corner tl"></div><div class="arena-corner tr"></div>
+          <div class="arena-corner bl"></div><div class="arena-corner br"></div>
+          <canvas id="bulletCanvas"></canvas>
+          <div id="soul" class="soul" aria-label="プレイヤーの魂"></div>
+          <div id="arenaHint" class="arena-hint">指でなぞる / スティックで移動</div>
+        </div>
+      </div>
+
+      <div class="player-status">
+        <div class="player-label"><strong id="playerName">花森 鈴音</strong><span id="playerRank">#ロード</span></div>
+        <div class="hp-row"><span>HP</span><strong id="playerHpText">80 / 80</strong><div class="hp-track"><div id="playerHpBar" class="hp-fill player-fill"></div></div></div>
+        <div class="status-note" id="statusNote">鈴音は鈴蛇薔薇を構えた。</div>
+      </div>
+
+      <div id="commandPanel" class="command-panel">
+        <button class="command-btn fight" data-command="fight"><b>FIGHT</b><small>攻撃する</small></button>
+        <button class="command-btn act" data-command="act"><b>ACT</b><small>相手を観察</small></button>
+        <button class="command-btn item" data-command="item"><b>ITEM</b><small>薬品を使う</small></button>
+        <button class="command-btn mercy" data-command="mercy"><b>MERCY</b><small>戦闘を終える</small></button>
+      </div>
+
+      <div id="joystick" class="joystick" aria-label="仮想スティック"><div id="stickKnob"></div></div>
+      <button id="backToTitle" class="back-btn">TITLE</button>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <p class="eyebrow">ENCOUNTER RESULT</p>
+      <h2 id="resultTitle">VICTORY</h2>
+      <p id="resultText">戦闘が終了した。</p>
+      <button id="retryBtn" class="primary-btn">もう一度遊ぶ</button>
+      <button id="resultTitleBtn" class="secondary-btn">タイトルへ戻る</button>
+    </section>
+  </main>
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
