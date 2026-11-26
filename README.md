@@ -1,0 +1,2 @@
+# BLOODWORLD-1
+BLOODWORLDの世界観を元に弾幕を執り行うことができるゲーム
