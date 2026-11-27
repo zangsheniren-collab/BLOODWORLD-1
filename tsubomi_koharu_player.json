@@ -1,0 +1,19 @@
+{
+  "name": "蕾 琥晴",
+  "source_enemy_id": "tsubomi_koharu",
+  "role": "操作キャラクター",
+  "rank": "ドミナント",
+  "hp": 145,
+  "attack": 31,
+  "ability": {
+    "name": "残雷・瞬断",
+    "uses_per_battle": 3,
+    "description": "自身の周囲にある敵弾・レーザーを切り払い、敵に固定24ダメージを与える。"
+  },
+  "special_item": {
+    "name": "返し鞘の留め具",
+    "count": 2,
+    "effect": "次の通常攻撃を2倍に強化する。"
+  },
+  "play_style": "危険な弾幕を切り払って反撃の隙を作る迎撃型。"
+}

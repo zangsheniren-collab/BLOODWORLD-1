@@ -1,0 +1,19 @@
+{
+  "name": "柏原 柚花（ユズ）",
+  "source_enemy_id": "kashiwabara_yuzuka",
+  "role": "操作キャラクター",
+  "rank": "ドミナント",
+  "hp": 132,
+  "attack": 29,
+  "ability": {
+    "name": "テンポジャック♡",
+    "uses_per_battle": 3,
+    "description": "次の敵ターンの弾速を38%低下させ、自身の移動速度を一時的に上昇させる。"
+  },
+  "special_item": {
+    "name": "鬼火チャーム♡",
+    "count": 2,
+    "effect": "次に受ける敵ターン中の被ダメージを55%軽減する。"
+  },
+  "play_style": "速度操作と回避補助を得意とする妨害型。"
+}

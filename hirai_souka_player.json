@@ -1,0 +1,19 @@
+{
+  "name": "飛雷 走過",
+  "source_enemy_id": "hirai_souka",
+  "role": "操作キャラクター",
+  "rank": "ドミナント",
+  "hp": 138,
+  "attack": 27,
+  "ability": {
+    "name": "電迅・刹那",
+    "uses_per_battle": 3,
+    "description": "雷光の軌道をなぞるように安全な位置へ転位し、約0.76秒間の被弾を防ぐ。"
+  },
+  "special_item": {
+    "name": "予備バッテリー",
+    "count": 2,
+    "effect": "能力使用回数を1回回復する。"
+  },
+  "play_style": "瞬間移動と短い無敵時間で回避する高速型。"
+}
