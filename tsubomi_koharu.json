@@ -1,0 +1,38 @@
+{
+  "id": "tsubomi_koharu",
+  "name": "蕾 琥晴",
+  "gender": "男",
+  "age": "不明（本人は17歳と推定）",
+  "height_cm": 176,
+  "weight_kg": 65,
+  "rank": "ドミナント",
+  "organization": "Ark — 南十字星",
+  "appearance": "明るい雰囲気の少年。黒を基調とした装備と黄緑色の雷光を帯びる刀「妖刀・布都御魂」を扱う。",
+  "personality": "人懐っこく新しいことが好き。弟を救えなかった記憶と後悔を抱えながら、人を護ろうとする。",
+  "likes": [
+    "人",
+    "ラーメン"
+  ],
+  "dislikes": [
+    "温泉"
+  ],
+  "abilities": [
+    "武甕槌",
+    "雷帝",
+    "OVERDRIVE"
+  ],
+  "gameplay": {
+    "hp": 300,
+    "turn_ms": 15800,
+    "phase_bonus_ms": 2100,
+    "patterns": [
+      "雷走・連閃",
+      "雷刃・軌跡",
+      "十字の雷斬",
+      "OVERDRIVE・線雷",
+      "布都御魂・剣雨",
+      "雷帝・格子斬"
+    ],
+    "theme": "素早い刀の軌跡と雷の斬撃レーザー"
+  }
+}
