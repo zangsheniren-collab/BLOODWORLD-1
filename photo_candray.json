@@ -1,0 +1,17 @@
+{
+  "id": "photo_candray",
+  "name": "フォト・キャンドレイ",
+  "role": "enemy",
+  "rank": "ドミナント",
+  "hp": 120,
+  "attack": 8,
+  "abilities": [
+    "恋の道化師",
+    "歌の道化師",
+    "道の道化師",
+    "猫化狐化"
+  ],
+  "organization": "CRAZYCANDY",
+  "image": null,
+  "note": "画像は後からassets/charactersに追加。"
+}
